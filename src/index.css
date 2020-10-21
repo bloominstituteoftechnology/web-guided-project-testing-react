@@ -1,0 +1,57 @@
+html,
+body,
+#root,
+.App {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: url("https://wallpaperplay.com/walls/full/7/0/b/104724.jpg")
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+}
+
+.App {
+  text-align: center;
+}
+
+.missions-list {
+  margin-top: 32px;
+}
+
+.mission {
+  padding: 12px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+button {
+  padding: 6px 12px;
+  font-size: 1.5rem;
+  background: none;
+  border: 1px solid white;
+  border-radius: 6px;
+  color: white;
+}
+
+button:hover {
+  background-color: white;
+  color: rgb(0, 0, 58);
+  cursor: pointer;
+}
