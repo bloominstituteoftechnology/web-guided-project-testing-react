@@ -38,7 +38,11 @@ test ("renders getData message if button is clicked", ()=> {
 
     // Arrange: Render our component with isFetchingData === false
     render(<MissionForm isFetchingData={false} />);
+    
     //Act: Find our button. Press our button.
+    const button = screen.queryByRole("button");
+    userEvent.click(button);
+    
     //Assert: See if a function gets called?
 
 })
