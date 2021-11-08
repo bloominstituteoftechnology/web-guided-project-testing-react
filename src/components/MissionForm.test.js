@@ -44,8 +44,11 @@ test ("renders getData message if button is clicked", ()=> {
     //Act: Find our button. Press our button.
     const button = screen.queryByRole("button");
     userEvent.click(button);
+    userEvent.click(button);
+    userEvent.click(button);
 
     //Assert: See if a function gets called?
+    // console.log('fakeGetData: ', fakeGetData);
     console.log('fakeGetData.mock: ', fakeGetData.mock);
 
 })
