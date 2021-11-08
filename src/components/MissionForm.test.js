@@ -26,7 +26,12 @@ test ("renders loading message if isFetchingData is true", ()=> {
 })
 
 test ("renders button message if isFetchingData is false", ()=> {
+    render(<MissionForm isFetchingData={false}/>);
+    const loadingMessage = screen.queryByText(/we are fetching data/i);
+    const button = screen.queryByRole('button');
 
+    expect(loadingMessage).toBeFalsy();
+    expect(button).toBeTruthy();
 })
 
 test ("renders getData message if button is clicked", ()=> {
