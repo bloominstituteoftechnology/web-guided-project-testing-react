@@ -8,6 +8,9 @@ test("renders without errors", ()=> {
 });
 
 test ("renders loading message if isFetchingData is true", ()=> {
+    //Arrange: Renders our component with isFetchingData === true
+    //Act: Find our loading message
+    //Assert: Verify that loading message exists    
     
 })
 
