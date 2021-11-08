@@ -17,6 +17,7 @@ test ("renders loading message if isFetchingData is true", ()=> {
 
     //Assert: Verify that loading message exists   
     expect(loadingMessage).toBeInTheDocument();
+    expect(loadingMessage).toBeTruthy();
     
 })
 
