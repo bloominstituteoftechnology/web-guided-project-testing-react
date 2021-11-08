@@ -11,7 +11,7 @@ test ("renders loading message if isFetchingData is true", ()=> {
     
 })
 
-test ("renders button message if isFetchingData is true", ()=> {
+test ("renders button message if isFetchingData is false", ()=> {
 
 })
 
