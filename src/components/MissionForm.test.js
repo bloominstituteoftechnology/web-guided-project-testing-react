@@ -9,9 +9,12 @@ test("renders without errors", ()=> {
 
 test ("renders loading message if isFetchingData is true", ()=> {
     //Arrange: Renders our component with isFetchingData === true
-    render (<MissionForm isFetchingData = {true} />)
+    render (<MissionForm isFetchingData = {true} />);
 
     //Act: Find our loading message
+    const loadingMessage = screen.getByText(/we are fetching data/i);
+    console.log('loadingMessage: ', loadingMessage);
+
     //Assert: Verify that loading message exists    
     
 })
