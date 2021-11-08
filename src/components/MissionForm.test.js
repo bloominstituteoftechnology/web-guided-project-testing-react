@@ -13,9 +13,10 @@ test ("renders loading message if isFetchingData is true", ()=> {
 
     //Act: Find our loading message
     const loadingMessage = screen.queryByText(/we are fetching data/i);
-    console.log('loadingMessage: ', loadingMessage);
+    // console.log('loadingMessage: ', loadingMessage);
 
-    //Assert: Verify that loading message exists    
+    //Assert: Verify that loading message exists   
+    expect(loadingMessage).toBeInTheDocument();
     
 })
 
