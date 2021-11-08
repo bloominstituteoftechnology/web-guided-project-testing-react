@@ -35,14 +35,18 @@ test ("renders button message if isFetchingData is false", ()=> {
 })
 
 test ("renders getData message if button is clicked", ()=> {
-
+    const fakeGetData = () => {
+        console.log('Calling my fake function');
+    }
+    
     // Arrange: Render our component with isFetchingData === false
-    render(<MissionForm isFetchingData={false} />);
+    render(<MissionForm isFetchingData={false} getData={fakeGetData}/>); 
+    // render(<MissionForm isFetchingData={false} />);
     
     //Act: Find our button. Press our button.
     const button = screen.queryByRole("button");
     userEvent.click(button);
-    
+
     //Assert: See if a function gets called?
 
 })
