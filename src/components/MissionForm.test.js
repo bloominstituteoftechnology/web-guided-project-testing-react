@@ -51,5 +51,6 @@ test ("renders getData message if button is clicked", ()=> {
     expect(fakeGetData.mock.calls.length).toBe(1);
     expect(fakeGetData.mock.calls.length === 1).toBeTruthy();
     expect(fakeGetData.mock.calls).toHaveLength(1);
+    expect(fakeGetData).toHaveBeenCalled();
 
 })
