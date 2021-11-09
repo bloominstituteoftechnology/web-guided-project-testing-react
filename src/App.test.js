@@ -13,7 +13,20 @@ test ("render without error", () => {
 
 test ("render all missions when button is clicked", async () => {
     fetchMissions.mockResolvedValueOnce({
-        status: "completed"
+        data: [
+            {
+                mission_id: 1,
+                mission_name: "mission 1"
+            },
+            {
+                mission_id: 2,
+                mission_name: "mission 2"
+            },
+            {
+                mission_id: 3,
+                mission_name: "mission 3"
+            }
+        ]
     })
     //Arrange: Renders App
     render (<App />)
@@ -25,5 +38,5 @@ test ("render all missions when button is clicked", async () => {
     //Assert: Verify that mission items are on the screen
     const missions = await screen.findAllByTestId('mission');
     // console.log('missions: ', missions); 
-    expect(missions).toHaveLength(10);
+    expect(missions).toHaveLength(3);
 })
