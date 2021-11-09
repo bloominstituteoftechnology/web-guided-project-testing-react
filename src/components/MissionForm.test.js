@@ -49,5 +49,6 @@ test ("renders getData message if button is clicked", ()=> {
     // console.log('fakeGetData: ', fakeGetData);
     console.log('fakeGetData.mock: ', fakeGetData.mock);
     expect(fakeGetData.mock.calls.length).toBe(1);
+    expect(fakeGetData.mock.calls.length === 1).toBeTruthy();
 
 })
