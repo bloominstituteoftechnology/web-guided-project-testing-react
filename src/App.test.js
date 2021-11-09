@@ -12,6 +12,9 @@ test ("render without error", () => {
 })
 
 test ("render all missions when button is clicked", async () => {
+    fetchMissions.mockResolvedValueOnce({
+        status: "completed"
+    })
     //Arrange: Renders App
     render (<App />)
 
