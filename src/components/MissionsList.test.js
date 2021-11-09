@@ -7,8 +7,11 @@ test ("renders without errors", () => {
 })
 
 test ("renders 3 missions after rendering no missions", () => {
-    //Arrange: render component with no missions
-    //Act: Find all missions
-    //Asset: Check that no missions have been rendered.
-    
+    //Arrange 1: render component with no missions
+    //Act 1: Find all missions
+    //Asset 1: Check that no missions have been rendered.
+
+    //Arrange 2: render component with 3 missions   
+    //Act 2: Find all missions    
+    //Asset 2s: Check that no missions have been rendered.  
 })
