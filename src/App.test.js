@@ -3,6 +3,10 @@ import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import App from './App'
 
+import { fetchMissions } from './api/fetchMissions'
+jest.mock('./api/fetchMissions');
+
+
 test ("render without error", () => {
     render (<App />)
 })
