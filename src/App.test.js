@@ -12,6 +12,9 @@ test ("render all missions when button is clicked", () => {
     render (<App />)
 
     //Act: Find and push our button within MissionForm
+    const button = screen.getByRole("button");
+    userEvent.click(button);
+
     //Assert: Verify that mission items are on the screen
  
 
