@@ -17,5 +17,6 @@ test ("render all missions when button is clicked", async () => {
 
     //Assert: Verify that mission items are on the screen
     const missions = await screen.findAllByTestId('mission');
-    console.log('missions: ', missions); 
+    // console.log('missions: ', missions); 
+    expect(missions).toHaveLength(10);
 })
