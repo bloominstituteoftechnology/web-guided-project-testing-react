@@ -40,7 +40,7 @@ test ("renders getData message if button is clicked", ()=> {
     });
 
     // Arrange: Render our component with isFetchingData === false
-    render(<MissionForm isFetchingData={false} getData={() => 
+    render(<MissionForm isFetchingData={false} getData={(a) => 
         {fakeGetData(Math.random())}}/>); 
     // render(<MissionForm isFetchingData={false} />);
     
