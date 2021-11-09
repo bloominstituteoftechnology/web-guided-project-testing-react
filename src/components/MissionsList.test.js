@@ -26,7 +26,7 @@ test ("renders 3 missions after rendering no missions", () => {
     const { rerender } = render(<MissionsList missions={[]}/>);
 
     //Act 1: Find all missions
-    const missions = screen.queryAllByTestId('mission');
+    let missions = screen.queryAllByTestId('mission');
     console.log('missions: ', missions);
 
     //Asset 1: Check that no missions have been rendered.
@@ -36,6 +36,8 @@ test ("renders 3 missions after rendering no missions", () => {
     //Arrange 2: render component with 3 missions   
     rerender(<MissionsList missions={testMissions}/>);
 
-    //Act 2: Find all missions    
+    //Act 2: Find all missions
+    missions = screen.queryAllByTestId('mission'); 
+    
     //Asset 2s: Check that no missions have been rendered.  
 })
