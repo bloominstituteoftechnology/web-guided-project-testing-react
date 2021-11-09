@@ -8,6 +8,8 @@ test ("renders without errors", () => {
 
 test ("renders 3 missions after rendering no missions", () => {
     //Arrange 1: render component with no missions
+    const { rerender } = render(<MissionsList missions={[]}/>);
+
     //Act 1: Find all missions
     //Asset 1: Check that no missions have been rendered.
 
