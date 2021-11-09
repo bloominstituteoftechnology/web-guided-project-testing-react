@@ -12,6 +12,7 @@ test ("renders 3 missions after rendering no missions", () => {
 
     //Act 1: Find all missions
     const missions = screen.queryAllByTestId('mission');
+    console.log('missions: ', missions);
 
     //Asset 1: Check that no missions have been rendered.
 
