@@ -9,6 +9,8 @@ test ("render without error", () => {
 
 test ("render all missions when button is clicked", () => {
     //Arrange: Renders App
+    render (<App />)
+
     //Act: Find and push our button within MissionForm
     //Assert: Verify that mission items are on the screen
  
