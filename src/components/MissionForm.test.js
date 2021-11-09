@@ -48,6 +48,6 @@ test ("renders getData message if button is clicked", ()=> {
     //Assert: See if a function gets called?
     // console.log('fakeGetData: ', fakeGetData);
     console.log('fakeGetData.mock: ', fakeGetData.mock);
-    expect(fakeGetData.mock.calls.length).toBe(3);
+    expect(fakeGetData.mock.calls.length).toBe(1);
 
 })
