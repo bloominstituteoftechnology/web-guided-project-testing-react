@@ -17,5 +17,5 @@ test ("render all missions when button is clicked", () => {
 
     //Assert: Verify that mission items are on the screen
     const missions = screen.findAllByTestId('mission');
-    
+   console.log('missions: ', missions); 
 })
