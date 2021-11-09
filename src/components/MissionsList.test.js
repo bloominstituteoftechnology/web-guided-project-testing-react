@@ -15,6 +15,7 @@ test ("renders 3 missions after rendering no missions", () => {
     console.log('missions: ', missions);
 
     //Asset 1: Check that no missions have been rendered.
+    expect(missions).toHaveLength(0);
 
     //Arrange 2: render component with 3 missions   
     //Act 2: Find all missions    
