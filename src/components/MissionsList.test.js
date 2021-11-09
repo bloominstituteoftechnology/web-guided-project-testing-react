@@ -39,5 +39,6 @@ test ("renders 3 missions after rendering no missions", () => {
     //Act 2: Find all missions
     missions = screen.queryAllByTestId('mission'); 
     
-    //Asset 2s: Check that no missions have been rendered.  
+    //Asset 2s: Check that no missions have been rendered.
+    expect(missions).toHaveLength(3); 
 })
