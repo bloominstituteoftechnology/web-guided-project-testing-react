@@ -11,6 +11,8 @@ test ("renders 3 missions after rendering no missions", () => {
     const { rerender } = render(<MissionsList missions={[]}/>);
 
     //Act 1: Find all missions
+    const missions = screen.queryAllByTestId('mission');
+
     //Asset 1: Check that no missions have been rendered.
 
     //Arrange 2: render component with 3 missions   
