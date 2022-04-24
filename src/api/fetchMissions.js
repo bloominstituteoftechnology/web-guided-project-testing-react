@@ -9,6 +9,6 @@ export const fetchMissions = () => {
     })
     .catch(err => {
       console.error("error fetching data from api, err: ", err.message);
-      return err;
+      throw err;
     });
 };
