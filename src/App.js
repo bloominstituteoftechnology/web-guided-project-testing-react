@@ -22,6 +22,7 @@ export default function App() {
         setError(err.message);
       });
   };
+  
   return (
     <div className="App">
       <h1>Space Missions</h1>
