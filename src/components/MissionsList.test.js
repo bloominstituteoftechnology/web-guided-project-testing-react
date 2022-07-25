@@ -17,7 +17,6 @@ test("MissionsList shows data when rerendered with new missions data", () => {
 const { rerender } = render(<MissionsList missions={[]}/>)
 //rerender() - allows us to render the component every time there are new props.
 
-
 let missionDivs = screen.queryAllByTestId("mission");
 expect(missionDivs).toEqual([]);
 
