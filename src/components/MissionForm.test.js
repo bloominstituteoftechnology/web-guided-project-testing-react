@@ -27,7 +27,16 @@ test('renders message when isFetchingData is true', () => {
 })
 
 //does the component render as expected when isFetchingData is false?
+test('renders button when isFetchingData is false', () => {
+    render(<MissionForm isFetchingData={false} />)
 
+    const getDataButton = screen.queryByRole("button");
+    const displayText = screen.queryByText(/we are fetching data/i);
+
+    expect(getDataButton).toBeInTheDocument();
+    expect(getDataButton).not.toBeNull();
+    expect(displayText).toBeNull();
+})
 
 //does getData execute when user executes behavior (click button)?
 
